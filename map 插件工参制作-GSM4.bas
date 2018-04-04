@@ -1,6 +1,35 @@
-Range("d1") = "Õ¾ï¿½ï¿½ï¿½ï¿½"
-Range("e1") = "Ð¡ï¿½ï¿½ï¿½ï¿½"
-Range("f1") = "Ð¡ï¿½ï¿½ï¿½ï¿½"
-Range("g1") = "ï¿½ï¿½ï¿½ï¿½"
-Range("h1") = "Î³ï¿½ï¿½"
-Range("i1") = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+Attribute VB_Name = "Ä£¿é1"
+
+Sub GSMn()
+ThisWorkbook.Sheets.Add Before:=Worksheets(1)
+ActiveSheet.Name = "sheet2"
+Worksheets("sheet2").Activate
+Range("a1") = "BSC"
+Range("B1") = "LACºÅ"
+Range("c1") = "Õ¾µãºÅ"
+Range("d1") = "Õ¾µãÃû"
+Range("e1") = "Ð¡ÇøºÅ"
+Range("f1") = "Ð¡ÇøÃû"
+Range("g1") = "¾­¶È"
+Range("h1") = "Î³¶È"
+Range("i1") = "¸²¸ÇÀàÐÍ"
+Range("j1") = "Ö÷Æµµã"
+Range("k1") = "TCH"
+Range("l1") = "·½Ïò½Ç"
+Range("m1") = "°ë¾¶_Ã×"
+Range("n1") = "²¨°ê_¶È"
+Sheet1.Activate
+Range("c2:c8000").Copy Sheets("Sheet2").Range("a2")
+Range("H2:H8000").Copy Sheets("Sheet2").Range("b2")
+Range("I2:I8000").Copy Sheets("Sheet2").Range("c2")
+Range("D2:D8000").Copy Sheets("Sheet2").Range("d2")
+Range("I2:I8000").Copy Sheets("Sheet2").Range("e2")
+Range("D2:D8000").Copy Sheets("Sheet2").Range("f2")
+ Range("K2:K8000").Copy Sheets("Sheet2").Range("g2")
+Range("L2:L8000").Copy Sheets("Sheet2").Range("h2")
+                                                         
+Range("AB2:AB8000").Copy Sheets("Sheet2").Range("J2")
+Range("g2:g8000").Copy Sheets("Sheet2").Range("K2")
+Range("M2:M8000").Copy Sheets("Sheet2").Range("L2")
+     End Sub
+
